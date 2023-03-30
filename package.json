@@ -1,0 +1,57 @@
+{
+  "name": "squareicon",
+  "version": "2.0.0",
+  "description": "identicons with squares",
+  "license": "MIT",
+  "author": {
+    "name": "Damien \"Mistic\" Sorel",
+    "email": "contact@git.strangeplanet.fr",
+    "url": "https://www.strangeplanet.fr"
+  },
+  "main": "index.js",
+  "browser": "browser.js",
+  "types": "types.d.ts",
+  "bin": "./cli.js",
+  "files": [
+    "browser.js",
+    "browser.js.map",
+    "cli.js",
+    "index.js",
+    "types.d.ts"
+  ],
+  "keywords": [
+    "identicons",
+    "abstract",
+    "canvas",
+    "avatar"
+  ],
+  "homepage": "https://mistic100.github.io/squareicon",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mistic100/squareicon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mistic100/squareicon/issues"
+  },
+  "scripts": {
+    "compile": "rollup --config rollup.config.mjs",
+    "serve": "alive-server --watch=browser.js,index.html --entry-file=index.html",
+    "start": "npm-run-all --parallel watch serve",
+    "watch": "nodemon --watch index.js --exec \"npm run compile\""
+  },
+  "dependencies": {
+    "canvas": "^2.11.0",
+    "randomcolor": "^0.6.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "alive-server": "^1.2.9",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^3.9.0"
+  }
+}

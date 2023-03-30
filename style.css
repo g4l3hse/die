@@ -1,0 +1,338 @@
+.canvas {
+  /* position: absolute; */
+  top: 0;
+  left: 50px;
+}
+
+.neonText {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem!important;
+  text-shadow:
+      0 0 7px #FFFF00,
+      0 0 10px #fc3,
+      0 0 20px #FFFF00,
+      0 0 30px #fc3,
+      0 0 40px #FFFF00,
+      0 0 50px #fc3,
+      0 0 60px #FFFF00,
+      0 0 700px #fc3;
+}
+
+h2 {
+  animation: flicker 2s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fc3,
+      0 0 11px #FFFF00,
+      0 0 19px #fc3,
+      0 0 40px #FFFF00,
+      0 0 80px #fc3,
+      0 0 90px #FFFF00,
+      0 0 100px #fc3,
+      0 0 150px #FFFF00;
+
+  }
+
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
+}
+
+
+/* Additional styling */
+
+
+.body {
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #010a01;
+}
+
+.h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+i::before {
+  margin-right: -9px;
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke: 0.8px #ffffff;
+  animation: glowing 1.2s reverse infinite ease-in-out;
+}
+
+i:nth-child(1)::before {
+  animation-delay: 0;
+}
+i:nth-child(2)::before {
+  animation-delay: 0.14s;
+}
+i:nth-child(3)::before {
+  animation-delay: 0.21s;
+}
+i:nth-child(4)::before {
+  animation-delay: 0.28s;
+}
+i:nth-child(5)::before {
+  animation-delay: 0.35s;
+}
+i:nth-child(6)::before {
+  animation-delay: 0.42s;
+}
+i:nth-child(7)::before {
+  animation-delay: 0.49s;
+}
+i:nth-child(8)::before {
+  animation-delay: 0.56s;
+}
+i:nth-child(9)::before {
+  animation-delay: 0.63s;
+}
+i:nth-child(10)::before {
+  animation-delay: 0.70s;
+}
+i:nth-child(11)::before {
+  animation-delay: 0.77s;
+}
+i:nth-child(12)::before {
+  animation-delay: 0.85s;
+}
+i:nth-child(13)::before {
+  animation-delay: 0.92s;
+}
+i:nth-child(14)::before {
+  animation-delay: 0.99s;
+}
+i:nth-child(15)::before {
+  animation-delay: 1.06s;
+}
+i:nth-child(16)::before {
+  animation-delay: 1.13s;
+}
+i:nth-child(17)::before {
+  animation-delay: 1.20s;
+}
+i:nth-child(18)::before {
+  animation-delay: 1.27s;
+}
+i:nth-child(19)::before {
+  animation-delay: 1.34s;
+}
+i:nth-child(20)::before {
+  animation-delay: 1.42s;
+}
+i:nth-child(21)::before {
+  animation-delay: 1.49s;
+}
+i:nth-child(22)::before {
+  animation-delay: 1.56s;
+}
+i:nth-child(23)::before {
+  animation-delay: 1.63s;
+}
+i:nth-child(24)::before {
+  animation-delay: 1.70s;
+}
+i:nth-child(25)::before {
+  animation-delay: 1.77s;
+}
+i:nth-child(26)::before {
+  animation-delay: 1.85s;
+}
+i:nth-child(27)::before {
+  animation-delay: 1.92s;
+}
+i:nth-child(28)::before {
+  animation-delay: 1.99s;
+}
+i:nth-child(29)::before {
+  animation-delay: 2.06s;
+}
+
+
+/* Let's Create Arrow Animation */
+@keyframes glowing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 1px #ffffff)
+      drop-shadow(0 0 2px #FF0099) drop-shadow(0 0 3px #FF0099)
+      drop-shadow(0 0 4px #FF0099) drop-shadow(0 0 5px #FF0099);
+  }
+}
+
+.btn-outline-primary
+{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #FF0099;
+  text-decoration: none;
+  transition: 0.5s;
+  overflow: hidden;
+  margin-right: 50px;
+  border-color: #ffffff00;
+  font-size: 20px;
+}
+
+.btn-outline-primary:hover{
+  background: #F185BE;
+  color: #050801;
+  box-shadow: 0 0 5px #F185BE,
+              0 0 25px #F185BE,
+              0 0 50px #F185BE,
+              0 0 200px #F185BE;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.btn-outline-primary:nth-child(1){
+  filter: hue-rotate(360deg);
+}
+.btn-outline-primary span{
+  position: absolute;
+  display: block;
+}
+
+.btn-outline-primary span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#FF0099);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+.btn-outline-primary span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#FF0099);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+
+.btn-outline-primary span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#FF0099);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+.btn-outline-primary span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#FF0099);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+}
+
+.vector {
+  position: relative;
+  right: 70px;
+}
+
+.rect-text {
+position: relative;
+width: 450px;
+height: 91px;
+left: 280px;
+bottom: 700px;
+
+font-family: 'TT Fors Educational Variable';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+
+.p1 {
+ position: relative;
+ bottom: 140px;
+}
+
+.p2 {
+  position: relative;
+  bottom: 100px;
+}
+
+.p3 {
+  position: relative;
+  bottom: 70px;
+}
+
+.p4 {
+   position: relative;
+   bottom: 35px;
+}
+
+.p1s {
+  position: relative;
+  bottom: 145px;
+ }
+
+.p2s {
+  position: relative;
+  bottom: 105px;
+}
+
+.p3s {
+  position: relative;
+  bottom: 75px;
+}
+
+.p4s {
+  position: relative;
+  bottom: 40px;
+}

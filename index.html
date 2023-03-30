@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>диск событий</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-colorpicker@3.0.3/dist/css/bootstrap-colorpicker.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+      integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper" style="height: 150px;">
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+      <i class="zmdi zmdi-chevron-right"></i>
+    </div>
+
+  <style>
+    body {
+     background: #99CC99;
+     background-image: url(img/Frame\ 31.png);
+    }
+   </style>
+   <div class="col-12 col-md-6 col-lg-8" style="height: 300px; left: 1050px; top: 50px;">
+    <img src="img/die.png" alt="LOGO" style="height: 350px; width: 350px;">
+      <img style="border: 0px; position: absolute; top: 100px; left:120px; width: 150px; height: 150px; background-color: rgba(0,0,0,0);" class="img-thumbnail" id="playground-img">
+    </div>
+    <div class="Rectangle" style="left: 500px; top: 100px;">
+    <div class="vector">
+      <img src="img/Rectangle 13.png" alt="LOGO" style="position: relative; left: 200px; bottom: 250px; background-color: rgba(0,0,0,0); height: 650px; width: 630px;">
+      <img src="img/Vector1.png" alt="1" style="position: relative; bottom: 470px; right: 400px;">
+      <img src="img/Vector2.png" alt="1" style="position: relative; bottom: 320px; right: 490px;">
+      <img src="img/Vector3.png" alt="1" style="position: relative; bottom: 170px; right: 580px;">
+      <img src="img/Vector4.png" alt="1" style="position: relative; bottom: 20px; right: 670px;">
+    </div>
+    <div class="rect-text">
+      <p class="p1">«событие» — ситуация, которую пользователю необходимо исправить</p>
+      <p class="p1s">[кратко опишите ситуацию]</p>
+      <p class="p2">«радиус влияния» — оцените насколько критично произошедшее событие</p>
+      <p class="p2s">[от 1 до 2]</p>
+      <p class="p3">«временная петля» — впишите как давно произошло событие</p>
+      <p class="p3s">[от 1 до 17]</p>
+      <p class="p4">«значимость» — оцените как сильно это событие может на вас повлиять</p>
+      <p class="p4s">[от 1 до 7]</p>
+    </div>
+    </div>
+        <div class="col-12 col-md-6 col-lg-4" style="bottom: 750px; left: 570px;">
+            <form class="border-rounded" id="playground-form" style="width: 600px; height: 200px; margin-left: 350px;">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary btn-sm" style="color:#ffffff; left: 170px; top: 300px; height: 70px; font-family: 'TT Fors Educational Variable';
+                font-style: normal;
+                font-weight: 705;
+                font-size: 20px;
+                line-height: 22px;" type="button"
+                        onclick="document.querySelector('#id').value = ''; refreshPlayground();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        предотвратить
+                </button>
+            </div>
+                <div class="form-group">
+                    <label style="color:#ffffff; font-family: 'TT Fors Educational Variable';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 28px;"  for="id">событие</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="id" name="id" style="width: 500px;">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label style="color:#ffffff; font-family: 'TT Fors Educational Variable';
+                        font-style: normal;
+                        font-weight: 705;
+                        font-size: 20px;
+                        line-height: 22px;" for="colors">радиус влияния</label>
+                        <input type="number" class="form-control" min="1" max="2" id="colors" name="colors">
+                    </div>
+                    <div class="form-group col">
+                        <label style="color:#ffffff; font-family: 'TT Fors Educational Variable';
+                        font-style: normal;
+                        font-weight: 705;
+                        font-size: 20px;
+                        line-height: 22px;" for="pixels">временная петля</label>
+                        <input type="number" class="form-control" min="2" max="17" id="pixels" name="pixels">
+                    </div>
+                    <div class="form-group col">
+                      <label style="color:#ffffff; font-family: 'TT Fors Educational Variable';
+                      font-style: normal;
+                      font-weight: 705;
+                      font-size: 20px;
+                      line-height: 22px;" for="padding">значимость</label>
+                      <input type="number" class="form-control" min="0" max="7" id="padding" name="padding">
+                  </div>
+                </div>
+            </form>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-colorpicker@3.0.3/dist/js/bootstrap-colorpicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/randomcolor@0.5.3/randomColor.min.js"></script>
+<script src="browser.js"></script>
+
+<script>
+    $('[data-toggle="colorpicker"]').colorpicker();
+
+    const playgroundForm = $('#playground-form');
+    const playgroundImg = $('#playground-img');
+
+    function refresh(id) {
+        id = id || Math.random().toString(16).substr(2);
+        $('[data-squareicon]').each(function() {
+            const options = Object.assign({
+                id: id,
+            }, this.dataset);
+
+            squareicon(options).then(data => this.src = data);
+        });
+    }
+
+    function refreshPlayground() {
+        const options = {};
+
+        for (const data of new FormData(playgroundForm[0]).entries()) {
+            options[data[0]] = data[1];
+        }
+
+        squareicon(options).then(data => playgroundImg[0].src = data);
+    }
+
+    function defaultPlayground() {
+        for (const [key, value] of Object.entries(squareicon.DEFAULT)) {
+            playgroundForm.find(`[name=${key}]`).val(value);
+        }
+        playgroundForm.find('[name=id]').val('squareicon');
+
+        refreshPlayground();
+    }
+
+    playgroundForm.on('change', refreshPlayground);
+    playgroundForm.on('keyup', refreshPlayground);
+
+    refresh('squareicon');
+    defaultPlayground();
+</script>
+</body>
+</html>
+
+
